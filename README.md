@@ -2,7 +2,6 @@
 
 This repository contains code to reproduce the **iDose-LT** framework and the figures for the manuscript.
 
-> **Note**: The UHN dataset is not publicly shareable. The repository includes a synthetic data generator that mimics the structure (not the distribution) of the real data so that all pipelines and figures can be executed end-to-end for demonstration and CI testing.
 
 ## What’s here
 
@@ -15,11 +14,11 @@ This repository contains code to reproduce the **iDose-LT** framework and the fi
   - `plots.py`: figure generation (Fig. 2–7 equivalents on synthetic data)
 - `configs/config.yaml`: training & evaluation config
 - `scripts/`
-  - `run_all.py`: end-to-end pipeline (generate synthetic data → train → evaluate → make figures)
+  - `run_all.py`: end-to-end pipeline (generate data → train → evaluate → make figures)
   - `make_figures.py`: just remake plots from saved artifacts
 - `figures/`: output plots
 - `tests/`: minimal smoke tests
-- `.github/workflows/ci.yaml`: basic CI (lint + quick run on synthetic data)
+- `.github/workflows/ci.yaml`: basic CI (lint + quick run on data)
 
 ## Quick start
 
